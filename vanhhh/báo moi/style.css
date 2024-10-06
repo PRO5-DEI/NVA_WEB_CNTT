@@ -1,0 +1,593 @@
+
+
+/* tieu de phần tên
+<html>	Đây là thẻ gốc trong tệp dữ liệu và chứa tất cả các loại thẻ khác trong đoạn code (ngoại trừ !DOCTYPE). 
+<base>	Chỉ định URL cơ sở cho tất cả các URL tương đối trong một tài liệu. Và chỉ có thể có một phần tử như vậy trong một tài liệu. 
+<head>	Phần tử con đầu tiên của thẻ <html> và bao gồm các thẻ con khác chứa thông tin về trang web.
+<style>	Dùng để định dạng các thành phần của website như màu sắc, màu nền, màu viền,… của bất cứ thành phần nào có trong trang HTML. 
+<title>	Thường được sử dụng bên trong thẻ <head> và được dùng để xác định tiêu đề của trang web khi được hiển thị trên trình duyệt. 
+<meta>	Thường được đặt bên trong phần tử <head> và dùng để cung cấp metadata cho trình duyệt và công cụ tìm kiếm.
+Những thông tin này thường không hiển thị trên website nhưng các trình duyệt hoặc công cụ tìm kiếm có thể hiểu và đọc được.
+
+<link>	Đặt trong phần tử <head> và được sử dụng để định nghĩa một liên kết trên trang web với một liên kết bên ngoài trang web.
+<body>	Được sử dụng như phần tử con thứ hai của thẻ <html> và dùng để chứa các nội dung mà bạn muốn hiển thị lên trang web. 
+<h1> – <h6>	Xác định những tiêu đề chính trong một đoạn văn bản. Các thẻ <h1> đến <h6> có định dạng mặc định là chữ to và in đậm. 
+<hr>	Thường được sử dụng để chèn đường kẻ phân cách nằm ngang và không có thẻ đóng. 
+<p>	Xác định một đoạn văn bản trong <html>.
+<br>	Được sử dụng để ngắt xuống dòng bởi trong HTML, bạn không thể sử dụng Enter để ngắt xuống dòng như các trình soạn thảo thông thường.
+<em>	Nhấn mạnh văn bản quan trọng.
+<b>	Định dạng chữ in đậm trong đoạn văn bản.
+<strong>	Cho phép người dùng bôi đậm các ký tự, đoạn văn bản mong muốn.
+Thẻ này có chức năng định dạng giống với <b> nhưng <strong> được khuyến khích sử dụng nhiều hơn khi bạn muốn đánh dấu các văn bản ở mức độ quan trọng.
+
+<i>	Định dạng chữ in nghiêng trong nội dung văn bản.
+<u>	Định dạng chữ gạch chân trong nội dung văn bản.
+<abbr>	Được sử dụng để định nghĩa từ viết tắt hoặc tóm tắt một đoạn nội dung nào đó.
+<blockquote>	Tạo một đoạn trích dẫn từ một website khác. 
+<small>	Định dạng kích thước nhỏ cho văn bản.
+<code>	Định dạng văn bản mang ý nghĩa là câu lệnh trong lập trình.
+<pre>	Định dạng nội dung mà bạn muốn hiển thị lên màn hình được giữ nguyên hình dạng giống như ở trình soạn thảo. Bên cạnh đó, thẻ còn công dụng giữ nguyên khoảng trắng và xuống dòng trong lập trình.
+<q>	Dùng để tạo một câu trích dẫn ngắn khi được hiển thị trên trang web.
+<sub>	Được dùng để định dạng các loại văn bản nằm ở nửa dưới văn bản thông thường.
+<sup>	Định dạng văn bản có giá trị số mũ, lũy thừa,.. trong toán học hoặc là các văn bản có kích thước nhỏ, thường nằm ở nửa trên văn bản thông thường.
+<time>	Định dạng những đoạn văn bản có giá trị là ngày tháng, thời gian hoặc các ngày lễ đặc biệt trong năm.
+<wbr>	Có công dụng gần giống với <br>, được dùng khi chiều rộng của phần tử không đủ để chứa hết từ, sử dụng <wbr> để ngắt xuống dòng. 
+<bdo>	Được sử dụng để đảo ngược thứ tự xuất hiện trên trang web của các ký tự. 
+<table>	Thẻ được dùng để xác định dữ liệu bảng, những thông tin bên trong thẻ này sẽ được trình bày trong bảng gồm các hàng và cột chứa dữ liệu.
+<caption>	Xác định chú thích hoặc tiêu đề của bảng.
+<colgroup>	Xác định một nhóm các cột trong một bảng.
+<col>	Phần tử con của <colgroup> và được dùng để xác định thuộc tính cho cột.
+<thead>	Xác định phần nội dung là tiêu đề của bảng.
+<tbody>	Xác định phần nội dung chính của bảng.
+<tfoot>	Xác định các nội dung mang tính tổng kết, tính tổng, thành tiền,…
+<tr>	Được dùng để xác định một hàng trong bảng (table row).
+<td>	Phần tử con của <tr> và được dùng để xác định một ô trong bảng dữ liệu.
+<th>	Phần tử con của <tr> và được dùng để xác định tiêu đề của một nhóm ô trong bảng.
+<li>	Thẻ được dùng để định dạng thông tin danh sách (list) và là phần tử con của thẻ <ul> và <ol>
+<ul>	Xác định danh sách không có thứ tự, hay còn gọi là Unordered List
+<ol>	Được dùng để xác định các loại danh sách có thứ tự rõ ràng (Ordered List)
+<dl>	Danh sách miêu tả được dùng để hiển thị các thuật ngữ và miêu tả. 
+<dt>	Chỉ định một thuật ngữ trong danh sách mô tả <dl>, thường được theo sau bởi phần tử  <dd>.
+<dd>	Cung cấp mô tả, định nghĩa hoặc giá trị cho thuật ngữ <dt> trong danh sách mô tả.
+*/
+
+
+.tieu-de{
+    text-decoration: none;
+    color: black;
+    font-weight: 5;
+}
+
+
+
+
+
+
+
+.i{
+    margin-right: 15px;
+    font-weight: 5;
+}
+
+
+
+
+
+
+
+.a{
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+.b{
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+.logo{
+    margin-top: -15px;
+    margin-right: 130px ;
+}
+
+
+
+
+
+
+
+.box-menu{
+    margin-top: -18px;
+    margin-bottom:-18px ;
+    background-color: rgb(248, 247, 246);
+}
+
+
+
+
+
+
+.box-menu ul{
+    text-align: center
+}
+
+
+
+
+
+
+.box-menu ul li{
+    color: #f7b4eb;
+    height: 40px;
+    line-height: 40px;
+    display: inline-table;
+    font-size: small;
+    position: relative; 
+    border: 1;
+    }
+
+
+
+
+
+
+.box-menu ul li a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+ }
+
+
+
+
+
+
+
+
+.box-menu .sub-menu ul li a:hover{
+    position: relative;
+    text-decoration: underline;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+.box-menu ul li > .sub-menu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    margin: 0;
+    background-color: #fcf6f6;
+}
+
+
+
+
+
+
+
+
+.box-menu ul li:hover .sub-menu{
+    display: block;
+    justify-content: left;
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.sub-menu{
+    font-size: small;
+    border-top: 0.5px solid brown;
+    width: 186px;
+    
+}
+
+
+
+
+
+
+ul,li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+.noidung{
+    margin-top: -16px;
+    background-color: #19202f;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+    text-align: center;
+}
+
+
+
+
+
+
+.footer1{
+    text-decoration: none;
+    color: rgb(70, 122, 235);
+    text-align: center;
+}
+
+
+
+
+
+
+.footer2{
+    margin-left: 200px;
+    color: gray;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+#ykien{
+    width: 700px;
+    height: 70px;
+    border-radius: 10px;
+    border-left: 3px solid rgb(200, 30, 30);
+    border-bottom: 0.5px solid rgb(190, 186, 186);
+    border-top:0.5px solid rgb(190, 186, 186) ;
+    border-right: 0.5px solid rgb(190, 186, 186);
+}
+
+
+
+
+
+
+.bang, tr, td{
+    border: 0px solid rgb(84, 83, 83);
+    padding: 15px;
+}
+
+
+
+
+
+
+
+.ke{
+   border-bottom: 1px solid rgb(80, 76, 76);
+}
+
+
+
+
+
+
+
+.dulich{
+    text-decoration: none;
+    color: rgb(233, 222, 222);
+}
+
+
+
+
+
+
+
+
+
+.dulich:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.dexem{
+    background-color: #fff;
+    width: 700px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 3px solid rgb(195, 38, 38);
+    border-bottom: 0.5px solid rgb(190, 186, 186);
+    border-top:0.5px solid rgb(190, 186, 186) ;
+    border-right: 0.5px solid rgb(190, 186, 186);
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.Tags{
+    margin: 0px 8px 0px 
+    8px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.j{
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+.chuyenmuc{
+    width: 190px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid brown;
+}
+
+
+
+
+
+
+
+
+.khuon{
+    width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+   
+ .back{
+    background-color: rgb(99, 96, 96);
+    font-size: 18px; height: 50px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+
+#do-mau:hover{
+    color: brown;
+    margin: 0;
+}
+
+
+
+
+
+#mau:hover{
+    color: rgb(14, 216, 216);
+}
+
+
+
+
+#mau{
+    margin: 0;
+    padding: 16.5px 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+#do-mau{
+    margin: 0;
+    margin-right: 15px;
+    padding: 16.5px 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+
+
+
+
+
+
+.cac-muc{
+    width: 830px;
+}
+
+
+
+
+
+
+#minh-hoa{
+    height: 185px;
+    width: 250px;
+}
+
+
+
+
+
+
+
+#noidung1{
+    width: 560px;
+}
+
+
+
+
+
+
+
+
+.chuyenmuc1{
+    width: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid brown;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+#xem-them{
+    margin: 0px 0px 0px 870px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+
+.so-do{
+    width: 195px;
+}
+
+
+
+
+
+
+td h3{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+#muc_luc{
+    list-style: none;
+}
+
+
+
+
+
+
+
+#muc-luc a{
+ text-decoration:none ;
+ color: #000;
+}
+
+
+
+
+
+
+
+#ul-foter ul{
+    padding: 0px 30px 0px 0px;
+}
+
+
+
+
+
+
+
+#ul-foter {
+    width: 170px;
+    height: 290px;
+}
+
+
+
+
+
+#ul-foter a{
+color: #000;
+text-decoration: none;
+}
+
+
+
+
+
+#ul-foter a:hover{
+text-decoration: underline;
+}
